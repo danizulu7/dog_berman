@@ -1,0 +1,73 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.title {
+    background-image: url("../images/db-doberman1.jpg");
+    width: 101vw;
+    height: 104vh;
+    background-size:contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #e7e3de;
+}
+
+.title h1 {
+    font-size: 78px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.carousel {
+    display: flex;
+    height: 400px;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.carousel:first-of-type {
+    margin-top: 70px;
+}
+
+.carousel-title {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 122px;
+}
+
+.carousel-list {
+    width: 100%;
+    height: 100%;
+    background-color: #e7e3de;
+    font-size: 2.2em;
+    text-align: center;
+    padding-top: 122px;
+    text-decoration: none;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    background-color: #e7e3de;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.carousel-image img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order {
+    order: 1;
+}
