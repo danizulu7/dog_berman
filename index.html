@@ -1,69 +1,103 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Doberman</title>
-      <link rel="stylesheet" href="./assets/css/style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="UTF-8">
-    </head>
-    <body>
-      <section class="title">
+<html>
+  <head>
+    <title>Doberman</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <section class="title">
       <h1>Doberman</h1>
     </section>
-      <main>
-        <section class="carousel">
-          <div class="carousel-title">
-            <h2>Cosas que aman hacer:</h2>
-          </div>
-          <div class="carousel-list">
-            <ul>
-              <li>Jugar</li>
-              <li>Dormir</li>
-              <li>Estar con Amigos</li>
-            </ul>
-          </div>
-          <div class="carousel-image">
-              <img src="./assets/images/db-doberman-friends.jpg" alt="Doberman con amigos.">
-           </div>
-          </section>
-           <section class="carousel">
-          <div class="carousel-title order">
-            <h2>Top 3 cosas que odian: </h2>
-          </div>
-          <div class="carousel-list order">
-            <ol>
-              <li>La lluvia</li>
-              <li>Que no los mimen</li>
-              <li>No estar jugando</li>
-            </ol>
-          </div>
-          <div class="carousel-image">
-            <img src="./assets/images/db-doberman-bored.jpg" alt="Doberman aburrido">
-          </div>
-        </section>
-        <section>
-          <h2>Cat Form</h2>
-          <form action="https://cat_photo_app.playcode.io/submit-cat-photo">
-            <fieldset>
-              <legend>Is your cat an indoor or outdoor cat?</legend>
-              <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-              <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-            </fieldset>
-            <fieldset>
-              <legend>What's your cat's personality?</legend>
-              <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-              <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-              <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-            </fieldset>
-            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-            <button type="submit">Submit</button>
-          </form>
-        </section>
-      </main>
-      <footer>
-        <p>
-          No Copyright - <a href="https://playcode.io">playcode.io</a>
-        </p>
-      </footer>
-    </body>
+    <main>
+      <section class="carousel">
+        <div class="carousel-title">
+          <h2>Cosas que aman hacer:</h2>
+        </div>
+        <div class="carousel-list">
+          <ul>
+            <li>Jugar</li>
+            <li>Dormir</li>
+            <li>Estar con Amigos</li>
+          </ul>
+        </div>
+        <div class="carousel-image">
+          <img
+            src="./assets/images/db-doberman-friends.jpg"
+            alt="Doberman con amigos."
+          />
+        </div>
+      </section>
+      <section class="carousel">
+        <div class="carousel-title order">
+          <h2>Top 3 cosas que odian:</h2>
+        </div>
+        <div class="carousel-list order">
+          <ol>
+            <li>La lluvia</li>
+            <li>Que no los mimen</li>
+            <li>No estar jugando</li>
+          </ol>
+        </div>
+        <div class="carousel-image">
+          <img
+            src="./assets/images/db-doberman-bored.jpg"
+            alt="Doberman aburrido"
+          />
+        </div>
+      </section>
+      <section class="form">
+        <h2>Formulario</h2>
+        <form action="">
+          <fieldset>
+            <legend>¿Tu Doberman es mimado o juguetón?</legend>
+            <input
+              id="mimado"
+              type="radio"
+              name="mimado-jugueton"
+              value="mimado"
+              checked
+            />
+            <label>Mimado</label>
+            <input
+              id="jugueton"
+              type="radio"
+              name="mimado-jugueton"
+              value="jugueton"
+            /><label> Juguetón</label>
+          </fieldset>
+          <fieldset>
+            <legend>¿Cuál es la personalidad de tu Doberman?</legend>
+            <input
+              id="amoroso"
+              type="checkbox"
+              name="personality"
+              value="amoroso"
+              checked
+            />
+            <label for="amoroso">Amoroso</label>
+            <input
+              id="peresoso"
+              type="checkbox"
+              name="personality"
+              value="peresoso"
+            />
+            <label for="peresoso">Peresoso</label>
+            <input
+              id="energico"
+              type="checkbox"
+              name="personality"
+              value="energico"
+            />
+            <label for="energico">Enérgico</label>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright">No Copyright</p>
+    </footer>
+  </body>
 </html>
