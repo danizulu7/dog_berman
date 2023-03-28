@@ -89,9 +89,9 @@
 }
 
 fieldset {
-  display: inline-block;
-  margin: 0 10vh;
-  padding: 27px 4vh;
+    display: block;
+    margin: 30px 10vh 100px;
+    padding: 27px 4vh;
 }
 
 form {
