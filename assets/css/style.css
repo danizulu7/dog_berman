@@ -7,8 +7,8 @@
 
 .title {
   background-image: url("../images/db-doberman1.jpg");
-  width: 101vw;
-  height: 104vh;
+  width: 99vw;
+  height: 100vh;
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -34,32 +34,35 @@
 
 .carousel-title {
   color: white;
+  max-width: 20vw;
   width: 100%;
   height: 100%;
   background-color: black;
-  font-size: 2.5em;
+  font-size: 2.1em;
   text-align: center;
-  padding-top: 122px;
+  padding: 112px 30px;
 }
 
 .carousel-list {
+  max-width: 20vw;
   width: 100%;
   height: 100%;
   background-color: #e7e3de;
-  font-size: 2.2em;
+  font-size: 2.1em;
   text-align: center;
-  padding-top: 122px;
+  padding: 138px 30px;
 }
 
 .carousel-list li {
-  text-decoration: none;
+  list-style: none;
 }
 
 .carousel-image {
+  max-width: 20vw;
   width: 100%;
   height: 100%;
   background-color: #e7e3de;
-  font-size: 2.2em;
+  font-size: 2.1em;
   text-align: center;
 }
 
@@ -69,7 +72,7 @@
   padding: 0;
   height: 100%;
   object-fit: cover;
-  object-position: 95%;
+  object-position: 92%;
 }
 
 .order {
@@ -79,9 +82,10 @@
 .form {
   background-color: black;
   color: white;
-  font-size: 3em;
-  padding: 35px;
+  font-size: 2.2em;
+  padding: 90px 100px;
   margin-top: 70px;
+  width: 100%;
 }
 
 .form h2 {
@@ -102,12 +106,16 @@ label {
   margin-right: 64px;
 }
 
+input, button {
+  cursor: grab;
+}
+
 button {
   display: block;
   margin: 90px auto;
   width: 156px;
   height: 68px;
-  font-size: 31px;
+  font-size: 27px;
   background-color: white;
   color: black;
   font-weight: bold;
@@ -124,20 +132,80 @@ footer {
 
 @media (max-width: 1366px) {
   .carousel-title {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    padding: 130px 30px;
   }
 
   .carousel-list {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    padding: 130px 30px;
   }
 }
 
 @media (max-width: 992px) {
   .carousel {
-    width: 73vw;
+    width: 83vw;
+    margin: 0 115px;
   }
 
-  .carousel-image img {
-    object-position: 92%;
+  .carousel-title {
+    max-width: 26vw;
+  }
+
+  .carousel-image {
+    max-width: 26vw;
+  }
+
+  .carousel-list {
+    max-width: 26vw;
+  }
+
+  label {
+    margin-right: 112px;
+}
+}
+
+@media (max-width: 600px){
+  .title {
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .carousel {
+    display: inline-block;
+    margin: 60px 10%;
+  }
+
+  .carousel-title {
+    max-width: 80vw;
+    padding: 160px 30px;
+  }
+
+  .carousel-image {
+    max-width: 80vw;
+  }
+
+  .carousel-list {
+    max-width: 80vw;
+  }
+
+  .form {
+    padding: 90px 26px;
+  }
+
+  fieldset {
+    margin: 30px 0px 100px;
+    padding: 30px 38px;
+  }
+
+  legend {
+    text-align: center;
+  }
+
+  input {
+    display: block;
+    left: -23px;
+    top: 29px;
+    position: relative;
   }
 }
